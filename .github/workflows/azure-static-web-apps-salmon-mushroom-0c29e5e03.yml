@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16' # Specify your desired Node.js version
-      - name: Install Dependencies
+      - name: Install Dependencies with Legacy Peer Deps
         run: npm install --legacy-peer-deps
         working-directory: angular-app
       - name: Build And Deploy
